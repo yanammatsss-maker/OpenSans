@@ -17,7 +17,7 @@ body::after {
   width: 630px;
   height: 300px;
   background-image: url("../images/Ellipse 11.svg");
-   overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .section-1 {
@@ -81,7 +81,6 @@ body::after {
   background-repeat: no-repeat;
   background-position: right;
 }
-
 
 .section-3 h2 {
   font-size: 64px;
@@ -309,7 +308,7 @@ body::after {
   position: absolute;
   font-size: 300px;
   font-weight: 600;
-  color:#2c2c2c;
+  color: #2c2c2c;
   margin-top: -360px;
   margin-left: 610px;
   opacity: 0.8;
@@ -324,7 +323,7 @@ body::after {
   position: absolute;
   font-size: 300px;
   font-weight: 500;
-  color:#2c2c2c;
+  color: #2c2c2c;
   margin-top: -360px;
   margin-left: 810px;
   opacity: 0.8;
@@ -339,7 +338,7 @@ body::after {
   position: absolute;
   font-size: 300px;
   font-weight: 400;
-  color:#2c2c2c;
+  color: #2c2c2c;
   margin-top: -360px;
   margin-left: 1005px;
   opacity: 0.8;
