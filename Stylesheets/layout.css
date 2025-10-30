@@ -12,8 +12,8 @@ body {
 body::after {
   content: "";
   position: absolute;
-  top: 120px;
-  left: 622px;
+  top: 140px;
+  left: 630px;
   width: 630px;
   height: 300px;
   background-image: url("../images/Ellipse 11.svg");
@@ -23,10 +23,11 @@ body::after {
   background-color: #2c2c2c;
 }
 .section-1 div:nth-of-type(1) p {
+  position: absolute;
   font-size: 32px;
   font-weight: 600;
   padding: 58px 100px;
-  margin-top: 20px;
+  margin-top: 100px;
   color: #fff;
 }
 .tooltip-btn {
@@ -58,9 +59,6 @@ body::after {
   transform: scaleX(1);
 }
 
-.section-1 hr {
-  margin-top: -60px;
-}
 .section-2 {
   background-color: #2c2c2c;
 }
@@ -69,7 +67,7 @@ body::after {
   font-weight: 800;
   line-height: 100%;
   color: #fff;
-  padding: 260px 45px;
+  padding: 380px 45px;
 }
 .section-3 {
   height: 900px;
@@ -96,12 +94,26 @@ body::after {
   color: #fff;
 }
 .oblako {
-  transition: transform 0.3s ease;
   display: inline-block;
+  transition: transform 0.3s ease;
+  animation: floatCloud 6s ease-in-out infinite;
+  cursor: pointer;
+  margin-top: 60px;
 }
 
 .oblako:hover {
-  transform: scale(1.2);
+  transform: scale(1.1) translateY(-15px);
+  animation-duration: 3s;
+}
+
+@keyframes floatCloud {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(3deg);
+  }
 }
 
 .section-4 {
@@ -111,7 +123,7 @@ body::after {
 }
 
 .section-4-text-1 {
-  position: relative;
+  position: absolute;
   color: #fff;
   font-size: 24px;
   font-weight: 400;
@@ -120,7 +132,8 @@ body::after {
   width: 1000px;
 }
 .section-4 img {
-  margin-top: -592px;
+  position: relative;
+  margin-top: -50px;
 }
 
 .why {
@@ -135,43 +148,219 @@ body::after {
   font-size: 64px;
   font-weight: 800;
   margin-left: 100px;
-  margin-top: 80px;
+  margin-top: 20px;
 }
 .why p {
   font-size: 24px;
   font-weight: 400;
   color: #fff;
   line-height: 130%;
-  margin-top: 70px;
+  margin-top: 40px;
   margin-left: 100px;
   margin-bottom: 300px;
 }
 
 .why img {
-  position: absolute;
-  margin-top: -260px;
+  margin-top: -230px;
   margin-left: 200px;
 }
-
 .why p:nth-of-type(2) {
+  position: relative;
   color: rgb(255, 255, 255);
   font-size: 24px;
   font-weight: 400;
   line-height: 130%;
-  margin-top: 925px;
+  margin-top: 300px;
   margin-left: 100px;
 }
-.image {
+
+/* секция-5-шрифты */
+.why p:nth-of-type(3) {
   position: absolute;
-  margin-left: 100px;
-  margin-top: -760px !important;
-  opacity: 0;
-  transition: opacity 0.5s ease;
+  font-size: 300px;
+  font-weight: 300;
+  color: #2c2c2c;
+  margin-top: -800px;
+  margin-left: 125px;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
   cursor: pointer;
 }
 
-.image:hover {
+.why p:nth-of-type(3):hover {
   opacity: 1;
+  transform: scale(1.05);
+}
+.why p:nth-of-type(4) {
+  position: absolute;
+  font-size: 300px;
+  font-weight: 400;
+  color: #2c2c2c;
+  margin-top: -800px;
+  margin-left: 305px;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+.why p:nth-of-type(4):hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.why p:nth-of-type(5) {
+  position: absolute;
+  font-size: 300px;
+  font-weight: 500;
+  color: #2c2c2c;
+  margin-top: -800px;
+  margin-left: 493px;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+.why p:nth-of-type(5):hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.why p:nth-of-type(6) {
+  position: absolute;
+  font-size: 300px;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-top: -800px;
+  margin-left: 685px;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+.why p:nth-of-type(6):hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.why p:nth-of-type(7) {
+  position: absolute;
+  font-size: 300px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-top: -800px;
+  margin-left: 880px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: transform 0.4s ease, opacity 0.4s ease, color 0.4s ease;
+  transform-origin: center bottom;
+  animation: gentle-swing 4s ease-in-out infinite alternate;
+}
+
+.why p:nth-of-type(7):hover {
+  opacity: 1;
+  color: #ffffff;
+  transform: scale(1.15) rotate(4deg);
+  animation: gentle-swing 1s ease-in-out infinite alternate;
+}
+
+@keyframes gentle-swing {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+.why p:nth-of-type(8) {
+  position: absolute;
+  font-size: 300px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-top: -360px;
+  margin-left: 400px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: transform 0.4s ease, opacity 0.4s ease, color 0.4s ease;
+  transform-origin: center bottom;
+  animation: gentle-swing 4s ease-in-out infinite alternate;
+}
+
+.why p:nth-of-type(8):hover {
+  opacity: 1;
+  color: #ffffff;
+  transform: scale(1.15) rotate(4deg);
+  animation: gentle-swing 1s ease-in-out infinite alternate;
+}
+
+@keyframes gentle-swing {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+.why p:nth-of-type(9) {
+  position: absolute;
+  font-size: 300px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: -360px;
+  margin-left: 610px;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+.why p:nth-of-type(9):hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.why p:nth-of-type(10) {
+  position: absolute;
+  font-size: 300px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-top: -360px;
+  margin-left: 810px;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+.why p:nth-of-type(10):hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.why p:nth-of-type(11) {
+  position: absolute;
+  font-size: 300px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: -360px;
+  margin-left: 1005px;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+.why p:nth-of-type(11):hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.why p:nth-of-type(12) {
+  position: absolute;
+  font-size: 300px;
+  font-weight: 400;
+  color: #2c2c2c;
+  margin-top: -360px;
+  margin-left: 1195px;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+.why p:nth-of-type(12):hover {
+  opacity: 1;
+  transform: scale(1.05);
 }
 
 .section-6 {
@@ -192,7 +381,7 @@ body::after {
   color: #fff;
   font-size: 24px;
   font-weight: 700;
-  margin-top: 625px;
+  margin-top: 630px;
   margin-left: 890px;
   transition: transform 0.3s ease;
   display: inline-block;
@@ -210,7 +399,7 @@ body::after {
   position: absolute;
   font-size: 24px;
   font-weight: 700;
-  margin-top: 293px;
+  margin-top: 296px;
   margin-left: 659px;
   transition: transform 0.3s ease;
   display: inline-block;
@@ -245,7 +434,7 @@ body::after {
 
 .section-7 img:nth-of-type(2) {
   position: absolute;
-  margin-top: -540px;
+  margin-top: -500px;
   margin-left: 145px;
   opacity: 0.5;
   transition: opacity 0.5s ease;
@@ -257,8 +446,126 @@ body::after {
 }
 
 .section-7 img:nth-of-type(3) {
-  margin-top: 200px;
+  margin-top: 280px;
 }
+
+.section-7 p:nth-of-type(3) {
+  font-size: 126px;
+  font-weight: 800;
+  color: #2c2c2c;
+  margin-top: -696px;
+  margin-left: 190px;
+  opacity: 1; 
+  transition: opacity 0.3s ease; 
+  cursor: pointer;
+}
+
+.section-7 p:nth-of-type(3):hover {
+  opacity: 0; 
+}
+
+.section-7 p:nth-of-type(4) {
+  font-size: 126px;
+  font-weight: 800;
+  color: #2c2c2c;
+  margin-top: -126px;
+  margin-left: 260px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.section-7 p:nth-of-type(4):hover {
+  opacity: 0;
+}
+
+.section-7 p:nth-of-type(5) {
+  font-size: 126px;
+  font-weight: 800;
+  color: #2c2c2c;
+  margin-top: -126px;
+  margin-left: 335px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.section-7 p:nth-of-type(5):hover {
+  opacity: 0;
+}
+.section-7 p:nth-of-type(6) {
+  font-size: 126px;
+  font-weight: 800;
+  color: #2c2c2c;
+  margin-top: -17px;
+  margin-left: 192px;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+.section-7 p:nth-of-type(6):hover {
+  opacity: 0;
+}
+.section-7 p:nth-of-type(7) {
+  font-size: 126px;
+  font-weight: 800;
+  color: #2c2c2c;
+  margin-top: -125px;
+  margin-left: 267px;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+.section-7 p:nth-of-type(7):hover {
+  opacity: 0;
+}
+.section-7 p:nth-of-type(8) {
+  font-size: 126px;
+  font-weight: 800;
+  color: #2c2c2c;
+  margin-top: -125px;
+  margin-left: 336px;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+.section-7 p:nth-of-type(8):hover {
+  opacity: 0;
+}
+.section-7 p:nth-of-type(9) {
+  font-size: 124px;
+  font-weight: 800;
+  color: #2c2c2c;
+  margin-top: -18px;
+  margin-left: 190px;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+.section-7 p:nth-of-type(9):hover {
+  opacity: 0;
+}
+.section-7 p:nth-of-type(10) {
+  font-size: 124px;
+  font-weight: 800;
+  color: #2c2c2c;
+  margin-top: -124px;
+  margin-left: 263px;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+.section-7 p:nth-of-type(10):hover {
+  opacity: 0;
+}
+.section-7 p:nth-of-type(11) {
+  font-size: 123px;
+  font-weight: 800;
+  color: #2c2c2c;
+  margin-top: -124px;
+  margin-left: 338px;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+.section-7 p:nth-of-type(11):hover {
+  opacity: 0;
+}
+
 .section-8 {
   position: absolute;
   color: #2c2c2c;
@@ -297,8 +604,8 @@ body::after {
   line-height: 130%;
 }
 .dh .two {
-  margin-top: -30px;
-  margin-left: 450px;
+  margin-top: 10px;
+  margin-left: 470px;
   width: 800px;
 }
 .section-8 h2 {
@@ -330,7 +637,7 @@ body::after {
 .OS img {
   position: relative;
   margin-left: -300px;
-  margin-top: -800px;
+  margin-top: -740px;
 }
 .section-9 {
   position: absolute;
@@ -346,6 +653,7 @@ body::after {
   font-weight: 400;
   margin-top: 130px;
   margin-left: 100px;
+  line-height: 120%;
 }
 .section-9 b {
   font-weight: 800;
@@ -353,18 +661,20 @@ body::after {
 .section-9 p:nth-of-type(2) {
   font-size: 24px;
   font-weight: 400;
-  margin-top: -90px;
+  margin-top: -50px;
   margin-left: 430px;
+  line-height: 120%;
 }
 .section-9 p:nth-of-type(3) {
   font-size: 24px;
   font-weight: 400;
-  margin-top: -90px;
+  margin-top: -50px;
   margin-left: 840px;
+  line-height: 120%;
 }
 .section-9 img {
   position: absolute;
-  margin-top: -120px;
+  margin-top: -90px;
   margin-left: 1100px;
 }
 .btn-link {
@@ -392,6 +702,6 @@ body::after {
 }
 .vector {
   position: absolute;
-  margin-top: 3199px;
+  margin-top: 3190px;
   margin-left: 490px;
 }
