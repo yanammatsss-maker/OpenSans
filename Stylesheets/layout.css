@@ -8,7 +8,6 @@ body {
   font-family: "Open Sans", sans-serif;
   position: relative;
   background-color: #2c2c2c;
-  overflow-x: hidden;
 }
 body::after {
   content: "";
@@ -18,7 +17,9 @@ body::after {
   width: 630px;
   height: 300px;
   background-image: url("../images/Ellipse 11.svg");
+   overflow-x: hidden;
 }
+
 .section-1 {
   display: flex;
   background-color: #2c2c2c;
@@ -80,6 +81,7 @@ body::after {
   background-repeat: no-repeat;
   background-position: right;
 }
+
 
 .section-3 h2 {
   font-size: 64px;
@@ -307,7 +309,7 @@ body::after {
   position: absolute;
   font-size: 300px;
   font-weight: 600;
-  color: #ffffff;
+  color:#2c2c2c;
   margin-top: -360px;
   margin-left: 610px;
   opacity: 0.8;
@@ -322,7 +324,7 @@ body::after {
   position: absolute;
   font-size: 300px;
   font-weight: 500;
-  color: #ffffff;
+  color:#2c2c2c;
   margin-top: -360px;
   margin-left: 810px;
   opacity: 0.8;
@@ -337,7 +339,7 @@ body::after {
   position: absolute;
   font-size: 300px;
   font-weight: 400;
-  color: #ffffff;
+  color:#2c2c2c;
   margin-top: -360px;
   margin-left: 1005px;
   opacity: 0.8;
@@ -351,7 +353,7 @@ body::after {
 .why p:nth-of-type(12) {
   position: absolute;
   font-size: 300px;
-  font-weight: 400;
+  font-weight: 300;
   color: #2c2c2c;
   margin-top: -360px;
   margin-left: 1195px;
@@ -534,7 +536,7 @@ body::after {
   font-size: 124px;
   font-weight: 800;
   color: #2c2c2c;
-  margin-top: -18px;
+  margin-top: -17px;
   margin-left: 190px;
   transition: opacity 0.3s ease;
   cursor: pointer;
@@ -546,7 +548,7 @@ body::after {
   font-size: 124px;
   font-weight: 800;
   color: #2c2c2c;
-  margin-top: -124px;
+  margin-top: -123px;
   margin-left: 263px;
   transition: opacity 0.3s ease;
   cursor: pointer;
@@ -558,7 +560,7 @@ body::after {
   font-size: 123px;
   font-weight: 800;
   color: #2c2c2c;
-  margin-top: -124px;
+  margin-top: -123px;
   margin-left: 338px;
   transition: opacity 0.3s ease;
   cursor: pointer;
