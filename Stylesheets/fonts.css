@@ -1,60 +1,62 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/open-sans-bold.woff") format("woff");
+  src: url("../fonts/open-sans-bold.woff") format("woff"),
+    url(../fonts/OpenSans-Bold.ttf) format("truetype");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/open-sans-bold-italic.woff") format("truetype");
+  src: url("../fonts/open-sans-bold-italic.woff") format("woff");
   font-style: italic;
   font-weight: 700;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/open-sans-extrabold.woff") format("truetype");
+  src: url("../fonts/open-sans-extrabold.woff") format("woff"),
+    url(../fonts/OpenSans-ExtraBold.ttf) format("truetype");
   font-style: normal;
   font-weight: 800;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/open-sans-extrabold-italic.woff") format("truetype");
+  src: url("../fonts/open-sans-extrabold-italic.woff") format("woff");
   font-style: italic;
   font-weight: 800;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/open-sans-italic.woff") format("truetype");
+  src: url("../fonts/open-sans-italic.woff") format("woff");
   font-style: italic;
   font-weight: 400;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/open-sans-light.woff") format("truetype");
+  src: url("../fonts/open-sans-light.woff") format("woff");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/open-sans-light-italic.woff") format("truetype");
+  src: url("../fonts/open-sans-light-italic.woff") format("woff");
   font-style: italic;
   font-weight: 300;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/open-sans.woff") format("truetype");
+  src: url("../fonts/open-sans.woff") format("woff");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/open-sans-semibold.woff") format("truetype");
+  src: url("../fonts/open-sans-semibold.woff") format("woff");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/open-sans-semibold-italic.woff") format("truetype");
+  src: url("../fonts/open-sans-semibold-italic.woff") format("woff");
   font-style: italic;
   font-weight: 600;
 }
